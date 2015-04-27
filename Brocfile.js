@@ -9,7 +9,7 @@ var app = new EmberApp();
 
 app.import('bower_components/todomvc-common/base.css');
 app.import('bower_components/todomvc-app-css/index.css');
-
+app.import('bower_components/ember-localstorage-adapter/localstorage_adapter.js');
 // If you need to use different assets in different
 // environments, specify an object as the first parameter. That
 // object's keys should be the environment name and the values
