@@ -10,5 +10,9 @@ export default Ember.Controller.extend({
         model.save();
         return value;
     }
-  }.property('model.isCompleted')
+  }.property('model.isCompleted'),
+  editTodo: function(){
+    this.set('isEditing',true);
+  },
+  isEditing: false
 });
