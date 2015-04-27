@@ -5,18 +5,7 @@
         {{input type="text" class="new-todo" placeholder="What needs to be done?" value=newTitle action="createTodo"}}
       </header>
       <section class="main">
-        <ul class="todo-list">
-          {{#each todo in model itemController="todo"}}
-          <li {{bind-attr class="todo.model.isCompleted:completed todo.model.isEditing:editing"}}>
-            {{#if todo.model.isEditing}}
-              {{edit-todo class="edit" value=todo.model.title focus-out="acceptChange" insert-newline="acceptChange"}}
-            {{else}}
-              {{input type="checkbox" checked=todo.model.isCompleted:completed class="toggle"}}
-              <label {{action "editTodo" on="doubleClick"}}>{{todo.model.title}}</label><button {{action "removeTodo"}} class="destroy"></button>
-            {{/if}}
-          </li>
-          {{/each}}
-        </ul>
+          {{outlet}}
         <input type="checkbox" class="toggle-all">
       </section>
       <footer class="footer">
