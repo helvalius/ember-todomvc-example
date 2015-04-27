@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   actions: {
     editTodo: function(){
-      this.set('isEditing',true);
+      this.model.set('isEditing',true);
     },
     acceptChanges: function() {
       this.model.set('isEditing', false);
