@@ -1,7 +1,8 @@
 # Ember-todomvc
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This Example is based on the Blog Post
+https://medium.com/@bill_broughton/todomvc-in-ember-cli-3bfe2d3c95e4
+to show the TodoMVC example in the latest Ember.JS version.
 
 ## Prerequisites
 
